@@ -1,0 +1,21 @@
+buildscript {
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+
+    }
+
+
+    dependencies {
+        classpath Deps.androidGradlePlugin
+        classpath Deps.androidDaggerHiltPlugin
+        classpath Deps.kotlinPlugin
+        classpath Deps.googleServicesPlugin
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
