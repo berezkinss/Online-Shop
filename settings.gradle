@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "EcommerceConcept"
+include ':app',
+        ':navigation',
+        ':core',
+        ':core:data',
+        ':core:domain',
+        ':core:ui',
+        ':core:ui:uikit',
+        ':main',
+        ':main:data',
+        ':main:domain',
+        ':main:ui'
+
